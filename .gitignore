@@ -1,0 +1,49 @@
+# Sensitive files
+*.pem
+*.key
+*.crt
+*.cert
+.env
+.secrets
+config.json
+*.gpg
+*.asc
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Windows system files
+[C-c]onfig
+*.tmp
+*.log
+ntuser.dat
+NTUSER.DAT.{*}.TM.blf
+NTUSER.DAT.{*}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT.{*}.TMContainer00000000000000000002.regtrans-ms
+
+# Windows specific
+[Ss]ystem[Ss]ave
+*.backup
+desktop.ini
+ehthumbs.db
+[Tt]humbs.db
+
+# Application data that might contain sensitive info
+AppData/
+appdata/
+
+# Virtual environment data
+venv/
+env/
+ENV/
+
+# Log files
+*.log
+logs/
+
+# Private configuration files that might be symlinked
+private_config.yaml
+private_config.json

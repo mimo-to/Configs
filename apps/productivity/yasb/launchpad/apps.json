@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Zen",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Zen.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\zen_1761660962692.png",
+    "type": "app",
+    "id": 1761660962695
+  },
+  {
+    "title": "Comet",
+    "path": "C:\\Users\\rouna\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Comet.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\comet_1761661002227.png",
+    "type": "app",
+    "id": 1761661002229
+  },
+  {
+    "title": "Qwen",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Qwen.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\qwen_1761945234152.png",
+    "type": "app",
+    "id": 1761945234155
+  },
+  {
+    "title": "Spotify",
+    "path": "C:\\Users\\rouna\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Spotify.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\spotify_1761661031167.png",
+    "type": "app",
+    "id": 1761661031169
+  },
+  {
+    "title": "Notepad",
+    "path": "explorer.exe shell:AppsFolder\\Microsoft.WindowsNotepad_8wekyb3d8bbwe!App",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\notepad_1761661051032.png",
+    "type": "app",
+    "id": 1761661051033
+  },
+  {
+    "title": "Settings",
+    "path": "explorer.exe shell:AppsFolder\\windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\settings_1761661074247.png",
+    "type": "app",
+    "id": 1761661074249
+  },
+  {
+    "title": "Phone Link",
+    "path": "explorer.exe shell:AppsFolder\\Microsoft.YourPhone_8wekyb3d8bbwe!App",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\phone_link_1761661095208.png",
+    "type": "app",
+    "id": 1761661095209
+  },
+  {
+    "title": "UpNote",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\UpNote.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\upnote_1761661126874.png",
+    "type": "app",
+    "id": 1761661126875
+  },
+  {
+    "title": "Warp",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Warp.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\warp_1761661170143.png",
+    "type": "app",
+    "id": 1761661170145
+  },
+  {
+    "title": "Canva",
+    "path": "C:\\Users\\rouna\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Canva.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\canva_1761661186088.png",
+    "type": "app",
+    "id": 1761661186089
+  },
+  {
+    "title": "WhatsApp",
+    "path": "explorer.exe shell:AppsFolder\\5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\whatsapp_1761661198154.png",
+    "type": "app",
+    "id": 1761661198155
+  },
+  {
+    "title": "Copilot",
+    "path": "explorer.exe shell:AppsFolder\\Microsoft.Copilot_8wekyb3d8bbwe!App",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\copilot_1761661212016.png",
+    "type": "app",
+    "id": 1761661212017
+  },
+  {
+    "title": "Terminal",
+    "path": "explorer.exe shell:AppsFolder\\Microsoft.WindowsTerminal_8wekyb3d8bbwe!App",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\terminal_1761676951377.png",
+    "type": "app",
+    "id": 1761676951380
+  },
+  {
+    "title": "Task Manager",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Task Manager.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\task_manager_1761678752142.png",
+    "type": "app",
+    "id": 1761678752145
+  },
+  {
+    "title": "Logseq",
+    "path": "C:\\Users\\rouna\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Logseq\\Logseq.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\logseq_1761990789446.png",
+    "type": "app",
+    "id": 1761990789448
+  },
+  {
+    "title": "Ollama",
+    "path": "C:\\Users\\rouna\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Ollama.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\ollama_1761991053670.png",
+    "type": "app",
+    "id": 1761991053670
+  },
+  {
+    "title": "Shotcut",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Shotcut.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\shotcut_1761991219393.png",
+    "type": "app",
+    "id": 1761991219394
+  },
+  {
+    "title": "Docker Desktop",
+    "path": "explorer.exe shell:AppsFolder\\Docker.DockerForWindows.Settings",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\docker_desktop_1762188970711.png",
+    "type": "app",
+    "id": 1762188970716
+  },
+  {
+    "title": "Cherry Studio",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Cherry Studio.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\cherry_studio_1762189146060.png",
+    "type": "app",
+    "id": 1762189146062
+  },
+  {
+    "title": "LM Studio",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\LM Studio.lnk",
+    "icon": "C:\\Users\\rouna\\.config\\yasb\\launchpad\\icons\\lm_studio_1762196516762.png",
+    "type": "app",
+    "id": 1762196516765
+  }
+]
