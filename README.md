@@ -2,14 +2,13 @@
 
 # <span style="color: #5dd39e">✨ Configs Collection ✨</span>
 
+![Configuration Preview](image.png)
 
 ---
 
 ### 🎨 <span style="color: #5dd39e">Clean</span> 🌙 <span style="color: #7fe9d4">Themed</span> 🚀 <span style="color: #00c9a7">Configurations</span>
 
 </div>
-
-
 
 ## <span style="color: #5dd39e">📁 Repository Structure</span>
 
@@ -59,8 +58,8 @@
 ### <span style="color: #00c9a7">Installation</span>
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/yourusername/all_configs.git
-   cd all_configs
+   git clone https://github.com/yourusername/Configs.git
+   cd Configs
    ```
 2. **Run the installation script:**
    ```bash
@@ -101,7 +100,7 @@
 
 <div align="center">
 
-### <span style="color: #5dd39e">🌟</span> <span style="color: #00c9a7">Beautiful Configs</span> <span style="color: #7fe9d4">🌟</span>
+### <span style="color: #5dd39e">🌟</span> <span style="color: #00c9a7">Build your own Configs</span> <span style="color: #7fe9d4">🌟</span>
 
 
 
