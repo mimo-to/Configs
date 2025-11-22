@@ -28,30 +28,32 @@ bars:
     widgets:
       left:
         [
-          "home",
+          "power_menu",
           "glazewm_workspaces",
           "github",
           "vscode",
-          "glazewm_tiling_direction",
           "whkd",
           "bluetooth",
           "notes",
+          "todo",
+          "traffic",
           "systray",
           "taskbar",
         ]
       center: ["media", "launchpad", "active_window"]
       right:
         [
-          "traffic",
           "gpu",
           "cpu",
           "memory",
           "battery",
           "volume",
+          "ai_chat",
+          "wifi",
           "settings",
           "notifications",
+          "home",
           "clock",
-          "power_menu",
         ]
 widgets:
   glazewm_workspaces:
@@ -64,7 +66,7 @@ widgets:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
       label: "<span>\uf03e</span>"
-      image_path: "~\\Pictures\\Wallpapers"
+      image_path: "C:\\Users\\rouna\\Pictures\\Wallpapers"
       change_automatically: false # Automatically change wallpaper
       update_interval: 60
       gallery:
@@ -80,6 +82,48 @@ widgets:
         lazy_load_fadein: 400
         image_corner_radius: 8
         enable_cache: true
+  pomodoro:
+    type: "yasb.pomodoro.PomodoroWidget"
+    options:
+      label: "<span>{icon}</span> {remaining}"
+      label_alt: "<span>{icon}</span> {status}"
+      work_duration: 45  # You can change this to your preferred work time in minutes
+      break_duration: 10  # You can change this to your preferred break time in minutes
+      long_break_duration: 10  # Same as break to have uniform breaks
+      long_break_interval: 1  # After each work session
+      auto_start_breaks: true
+      auto_start_work: true
+      sound_notification: true
+      show_notification: true
+      hide_on_break: false
+      session_target: 0  # Unlimited sessions
+      icons:
+        work: "\uf252"
+        break: "\uf253"
+        paused: "\uf254"
+      menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+        circle_background_color: "#09ffffff"
+        circle_work_progress_color: "#88c0d0"
+        circle_break_progress_color: "#a3be8c"
+        circle_thickness: 8
+        circle_size: 160
+      callbacks:
+        on_left: "toggle_menu"
+        on_middle: "reset_timer"
+        on_right: "toggle_label"
+      label_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [1, 1]
   todo:
     type: "yasb.todo.TodoWidget"
     options:
@@ -144,7 +188,10 @@ widgets:
     type: "yasb.vscode.VSCodeWidget"
     options:
       label: "<span>\udb82\ude1e</span>"
-      cli_command: "code" # or "codium" or "windsurf" or any other CLI command to open the workspace
+      cli_command: "code"
+      callbacks:
+        on_left: "toggle_menu"
+        on_right: "toggle_label"
   whkd:
     type: "yasb.whkd.WhkdWidget"
     options:
@@ -270,7 +317,7 @@ widgets:
     type: "yasb.github.GithubWidget"
     options:
       label: "<span>\ueba1</span>"
-      token: YOUR_GITHUB_TOKEN
+      token: "YOUR_GITHUB_TOKEN"
   systray:
     type: "yasb.systray.SystrayWidget"
     options:
@@ -338,7 +385,7 @@ widgets:
         - { title: "\uf03e  Pictures", path: "~\\Pictures" }
         - { title: "\uf8fa  Videos", path: "~\\Videos" }
         - { title: "\uf886  Music", path: "~\\Music" }
-        - { title: "\uf07b  Projects", path: "~\\Business" }
+        - { title: "\uf07b  Projects", path: "C:\\Users\\rouna\\Business" }
         - { title: "\uf108  Desktop", path: "~\\Desktop" }
       system_menu: true
       power_menu: true
@@ -400,8 +447,8 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "<span>\ue769</span>{%I:%M %p}"
-      label_alt: "{%a, %d %b %H:%M:%S}"
+      label: "<span>\ue769</span>{%d.%m.%Y %I:%M %p}"
+      label_alt: "{%a, %d %b %Y %H:%M:%S}"
       timezones: [] #Looking up time zone info from registry
       #timezones: ["America/Montreal"]
       callbacks:
@@ -477,7 +524,7 @@ widgets:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
       label: "<span>\uf03e</span>"
-      image_path: "~\\Pictures\\Wallpapers" # Example path to folder with images
+      image_path: "C:\\Users\\rouna\\Pictures\\Wallpapers" # Example path to folder with images
       change_automatically: false # Automatically change wallpaper
       update_interval: 60 # If change_automatically is true, update interval in seconds
       gallery:
@@ -623,6 +670,127 @@ widgets:
       color: "black"
       radius: 3
       offset: [1, 4]
-
-
-
+  wifi:
+    type: "yasb.wifi.WifiWidget"
+    options:
+      label: "<span>{wifi_icon}</span>"
+      label_alt: "{wifi_name} {wifi_strength}%"
+      update_interval: 5000
+      wifi_icons: [
+        "\udb82\udd2e",  # 0% strength
+        "\udb82\udd1f",  # 1-24% strength
+        "\udb82\udd22",  # 25-49% strength
+        "\udb82\udd25",  # 50-74% strength
+        "\udb82\udd28"   # 75-100% strength
+      ]
+      ethernet_label: "<span>{wifi_icon}</span>"
+      ethernet_label_alt: "<span>{wifi_icon}</span>{ip_addr}"
+      ethernet_icon: "\ueba9"
+      get_exact_wifi_strength: false
+      hide_if_ethernet: false
+      callbacks:
+        on_left: "toggle_menu"
+        on_middle: "exec cmd.exe /c start ms-settings:network"
+        on_right: "toggle_label"
+      label_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [1, 1]
+      menu_config:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+  todo:
+    type: "yasb.todo.TodoWidget"
+    options:
+      label: "<span>\uf4a0</span> {count}"
+      label_alt: "<span>\uf4a0</span> Tasks: {count}"
+      menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "center"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+      icons:
+        add: "\uf501 New Task"
+        edit: "Edit"
+        delete: "Delete"
+        date: "\ue641"
+        category: "\uf412"
+        checked: "\udb80\udd34"
+        unchecked: "\udb80\udd30"
+        sort: "\ueab4"
+        no_tasks: "\uf4a0"
+      categories:
+        default:
+          label: "General"
+        urgent:
+          label: "Urgent"
+        important:
+          label: "Important"
+      callbacks:
+        on_left: "toggle_menu"
+        on_middle: "do_nothing"
+        on_right: "toggle_label"
+      label_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [1, 1]
+  ai_chat:
+    type: "yasb.ai_chat.AiChatWidget"
+    options:
+      label: "<span>\uf086</span>"
+      chat:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "center"
+        direction: "down"
+        offset_left: 0
+        offset_top: 6
+      icons:
+        send: "\uf1d8"
+        stop: "\uf04d"
+        clear: "\uf1f8"
+        assistant: "\udb81\ude74"
+      notification_dot:
+        enabled: false
+        corner: "top_right"
+        color: "red"
+        margin: [ 0, 2 ]
+      callbacks:
+        on_left: "toggle_chat"
+      providers:
+        - provider: "Ollama"
+          api_endpoint: "http://localhost:11434/v1"
+          credential: "ollama"
+          models:
+            - name: "qwen3:4b"
+              label: "Qwen3 4B"
+            - name: "granite3.1-moe:3b"
+              label: "Granite3 3B"
+            - name: "nomic-embed-text:latest"
+              label: "Nomic Embed Text"
+        # Google Gemini via Vertex AI with OpenAI-compatible endpoint
+        # Requires Google Cloud project, location, and access token
+        - provider: "Google Gemini (Vertex AI)"
+          api_endpoint: "https://region-aiplatform.googleapis.com/v1/projects/your-project-id/locations/region/endpoints/openapi"  # Replace region and project-id
+          credential: "GOOGLE_ACCESS_TOKEN"  # Use a Google Cloud access token, not API key
+          models:
+            - name: "google/gemini-2.0-flash-001"
+              label: "Gemini 2.0 Flash"
+            - name: "google/gemini-1.5-pro-001"
+              label: "Gemini 1.5 Pro"
+            - name: "google/gemini-1.5-flash-001"
+              label: "Gemini 1.5 Flash"

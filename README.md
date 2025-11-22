@@ -2,7 +2,7 @@
 
 # <span style="color: #5dd39e">✨ Configs Collection ✨</span>
 
-![Configuration Preview](image.png)
+![Configuration Preview](preview.jpg)
 
 ---
 
@@ -18,11 +18,9 @@
 │  │  ├─ 📁 yasb/            # Yet Another Status Bar configuration
 │  │  └─ 📁 glazewm/         # GlazeWM tiling window manager configuration
 │  ├─ 📁 terminal/            # Terminal and shell configurations
-│  ├─ 📁 browsers/            # Browser configurations
-│  └─ 📁 editors/             # Text editor configurations
+│  └─ 📁 system/              # System-level tools
 ├─ 📁 apps/system/            # System-level tools
 ├─ 📁 scripts/                # Setup and maintenance scripts
-├─ 📁 templates/              # Template files for new projects
 ├─ 📁 docs/                   # Documentation
 └─ 📁 tools/                  # Enhancement tools
 ```
@@ -39,8 +37,7 @@
 - <span style="color: #5dd39e">📊 **Fastfetch**</span> - System information tool configuration
 
 ### <span style="color: #7fe9d4">**Productivity Tools**</span>
-- <span style="color: #5dd39e">🔍 **Flow Launcher**</span> - Customized launcher with theme
-- <span style="color: #5dd39e">🔍 **Everything**</span> - Fast file search utility configuration
+- <span style="color: #5dd39e">🔍 **Raycast**</span> - Blazingly fast, extendable launcher
 - <span style="color: #5dd39e">📷 **ShareX**</span> - Screen capture and productivity tool settings
 - <span style="color: #5dd39e">📤 **LocalSend**</span> - Secure local file sharing tool configuration
 - <span style="color: #5dd39e">📦 **UniGetUI**</span> - Package manager frontend configuration
